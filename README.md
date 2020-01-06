@@ -13,3 +13,4 @@ https://amandamcox.github.io/find-yo-doggo/
 -   Optimize for Mobile
 -   Fix API data so it works with Petfinder
 -   Make new API with better data
+- Add unit tests
