@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import allDogData from '../allDogData'
 import Filter from './Filter'
 import Content from './Content'
-import '../App.css'
+import '../statics/App.css'
 
 function App() {
 	const [appliedSizeFilters, setAppliedSizeFilters] = useState([])
