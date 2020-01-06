@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+
+body {
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+	background-color: white;
+}
+
+#content {
+	padding: 0px 20px;
+}
+
+#top-bar {
+	margin-bottom: 20px;
+	padding: 50px 0px 0px 30px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 48px;
+	color: white;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px #9e9e9e;
+	background-image: linear-gradient(to bottom, #d17f4b, transparent),
+		url('statics/header-image4.jpg');
+	background-size: cover;
+	background-blend-mode: screen;
+	height: 150px;
+	border-bottom: 2px solid #d17f4b;
+}
+
+.ui.accordion .title:not(.ui) {
+	color: #d17f4b;
+	font-weight: bold;
+}
+
+.ui.checkbox input.hidden + label {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.ui.attached.button > a {
+	color: white;
+}
+
+.ui.attached.button:hover {
+	background-color: #16588a;
+}
+
+.ui.segment {
+	border: 0px;
+	box-shadow: none;
+	padding: 0px;
+	margin: 15px 0px;
+}
+
+.ui.segment > .ui.label {
+	border-radius: 15px;
+}
+
+#no-results {
+	-webkit-box-shadow: 0 0 0 1px #16588a inset, 0 0 0 0 transparent;
+	box-shadow: 0 0 0 1px #16588a inset, 0 0 0 0 transparent;
+	background-color: #b8cfe0;
+	color: #16588a;
+}
+
+#no-results > .header {
+	color: #16588a;
+}

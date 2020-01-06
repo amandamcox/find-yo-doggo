@@ -1,2 +1,4 @@
-# find-yo-doggo
-React webapp to filter dog breeds and adopt
+### Find Yo Doggo
+
+A react frontend using public dog APIs.
+More to come!
