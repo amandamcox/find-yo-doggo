@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/find-yo-doggo/static/css/main.687afc28.chunk.css",
-    "main.js": "/find-yo-doggo/static/js/main.50bfa017.chunk.js",
-    "main.js.map": "/find-yo-doggo/static/js/main.50bfa017.chunk.js.map",
+    "main.css": "/find-yo-doggo/static/css/main.dedf8ca4.chunk.css",
+    "main.js": "/find-yo-doggo/static/js/main.492af7eb.chunk.js",
+    "main.js.map": "/find-yo-doggo/static/js/main.492af7eb.chunk.js.map",
     "runtime-main.js": "/find-yo-doggo/static/js/runtime-main.4a45fb91.js",
     "runtime-main.js.map": "/find-yo-doggo/static/js/runtime-main.4a45fb91.js.map",
     "static/js/2.80648f35.chunk.js": "/find-yo-doggo/static/js/2.80648f35.chunk.js",
     "static/js/2.80648f35.chunk.js.map": "/find-yo-doggo/static/js/2.80648f35.chunk.js.map",
     "index.html": "/find-yo-doggo/index.html",
-    "precache-manifest.d3bcb6bf3c460a386c09f6f4d1fd7093.js": "/find-yo-doggo/precache-manifest.d3bcb6bf3c460a386c09f6f4d1fd7093.js",
+    "precache-manifest.5a4b54de10f9f9207be756bb8cd80d7c.js": "/find-yo-doggo/precache-manifest.5a4b54de10f9f9207be756bb8cd80d7c.js",
     "service-worker.js": "/find-yo-doggo/service-worker.js",
-    "static/css/main.687afc28.chunk.css.map": "/find-yo-doggo/static/css/main.687afc28.chunk.css.map",
+    "static/css/main.dedf8ca4.chunk.css.map": "/find-yo-doggo/static/css/main.dedf8ca4.chunk.css.map",
     "static/js/2.80648f35.chunk.js.LICENSE": "/find-yo-doggo/static/js/2.80648f35.chunk.js.LICENSE",
     "static/media/App.css": "/find-yo-doggo/static/media/header-image4.46374d60.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4a45fb91.js",
     "static/js/2.80648f35.chunk.js",
-    "static/css/main.687afc28.chunk.css",
-    "static/js/main.50bfa017.chunk.js"
+    "static/css/main.dedf8ca4.chunk.css",
+    "static/js/main.492af7eb.chunk.js"
   ]
 }
