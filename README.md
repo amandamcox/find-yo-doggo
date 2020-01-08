@@ -12,6 +12,12 @@ https://amandamcox.github.io/find-yo-doggo/
 
 ### Screenshots
 
+![Desktop without filters](https://github.com/amandamcox/find-yo-doggo/blob/master/screenshots/Homepage%20-%20No%20Filters.png)
+
+![Desktop with filters](https://github.com/amandamcox/find-yo-doggo/blob/master/screenshots/Homepage%20-%20With%20Filters.png)
+
+![Mobile](https://github.com/amandamcox/find-yo-doggo/blob/master/screenshots/Homepage%20-%20Mobile%20View.png)
+
 ### To Dos
 
 -   Fix API data so it works with Petfinder
