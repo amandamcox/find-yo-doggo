@@ -12,4 +12,4 @@ https://amandamcox.github.io/find-yo-doggo/
 
 -   Fix API data so it works with Petfinder
 -   Make new API with better data
--   Add unit tests
+-   Add more unit tests around toggles
