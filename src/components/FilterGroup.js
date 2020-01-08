@@ -3,6 +3,11 @@ import React from 'react'
 const FilterGroup = ({ title, items, onChange }) => {
 	const handleOnClick = (toggle, filter) => {
 		onChange(toggle, filter)
+
+		if (document.body.clientWidth <= 600) {
+			document.querySelector('.title.active').classList.remove('active')
+			document.querySelector('.content.active').classList.remove('active')
+		}
 	}
 
 	return (

@@ -64,13 +64,15 @@ function App() {
 					))}
 				</div>
 			)
+		} else {
+			return <div className='ui segment filter-placeholder'></div>
 		}
 	}
 
 	return (
 		<div className='container'>
 			<div id='top-bar'>Find Yo Doggo</div>
-			<div id='content' className='ui two column grid'>
+			<div id='content' className='ui stackable two column grid'>
 				<div className='four wide column'>
 					<Filter onChange={handleFilterToggle} />
 				</div>

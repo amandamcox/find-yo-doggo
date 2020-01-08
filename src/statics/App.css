@@ -69,3 +69,28 @@ body {
 #no-results > .header {
 	color: #16588a;
 }
+
+.ui.segment.filter-placeholder {
+	height: 26px;
+}
+
+.ui.toggle.checkbox > .ui.label {
+	border-radius: 500rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.ui.segment.filter-placeholder {
+		height: 0px;
+	}
+
+	#top-bar {
+		padding: 15px 70px 0px 20px;
+		height: 90px;
+		font-size: 32px;
+		line-height: 28px;
+	}
+
+	.ui.cards {
+		margin: 0px;
+	}
+}

@@ -22,7 +22,7 @@ const Content = ({ data }) => {
 			{data.length === 0 ? (
 				displayNoResults()
 			) : (
-				<div className='ui two cards'>
+				<div className='ui stackable two cards'>
 					{data.map(eachDog => (
 						<div className='card' key={eachDog.id}>
 							<div className='ui image'>
