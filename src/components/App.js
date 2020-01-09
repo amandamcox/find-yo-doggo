@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import allDogData from '../allDogData'
+import allDogData from '../dogApiNew'
 import Filter from './Filter'
 import Content from './Content'
 import '../statics/App.css'
@@ -19,13 +19,13 @@ function App() {
 			return allDogData.filter(
 				dog =>
 					appliedSizeFilters.includes(dog.size) &&
-					appliedCharFilters.every(c => dog.characteristics.includes(c))
+					appliedCharFilters.every(c => dog.temperament.includes(c))
 			)
 		} else if (appliedSizeFilters.length > 0 && appliedCharFilters.length === 0) {
 			return allDogData.filter(dog => appliedSizeFilters.includes(dog.size))
 		} else if (appliedSizeFilters.length === 0 && appliedCharFilters.length > 0) {
 			return allDogData.filter(dog =>
-				appliedCharFilters.every(c => dog.characteristics.includes(c))
+				appliedCharFilters.every(c => dog.temperament.includes(c))
 			)
 		} else {
 			return allDogData

@@ -31,11 +31,11 @@ const Content = ({ data }) => {
 							<div className='content'>
 								<div className='header'>{eachDog.breed}</div>
 								<div className='meta'>
-									<span className='right floated'>{eachDog.weight} lbs</span>
-									<span>{eachDog.height} in</span>
+									<span className='right floated'>{eachDog.weight}</span>
+									<span>{eachDog.height}</span>
 								</div>
 								<div className='center aligned description'>
-									{eachDog.characteristics}
+									{eachDog.temperament}
 								</div>
 							</div>
 							<div className='ui bottom attached blue button'>

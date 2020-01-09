@@ -1,12 +1,10 @@
 import React from 'react'
 import FilterGroup from './FilterGroup'
-import filterDogData from '../dogDataByFilters'
+import characteristicsData from '../allCharacteristics'
 
 const Filter = ({ onChange }) => {
-	const filterData = filterDogData.dogDataByFilters
-	const titles = Object.keys(filterData)
-	const sizeArr = Object.keys(filterData.sizes)
-	const charArr = Object.keys(filterData.characteristics)
+	const sizeArr = ['Toy', 'Small', 'Medium', 'Large', 'Extra Large']
+	const charArr = characteristicsData
 
 	return (
 		<div>
@@ -22,7 +20,7 @@ const Filter = ({ onChange }) => {
 					</div>
 					<div className='content active'>
 						<form className='ui form'>
-							<FilterGroup title={titles[0]} items={sizeArr} onChange={onChange} />
+							<FilterGroup title='sizes' items={sizeArr} onChange={onChange} />
 						</form>
 					</div>
 					<div className='ui divider'></div>
@@ -32,7 +30,11 @@ const Filter = ({ onChange }) => {
 					</div>
 					<div className='content'>
 						<form className='ui form'>
-							<FilterGroup title={titles[1]} items={charArr} onChange={onChange} />
+							<FilterGroup
+								title='characteristics'
+								items={charArr}
+								onChange={onChange}
+							/>
 						</form>
 					</div>
 				</div>
