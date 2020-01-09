@@ -70,16 +70,21 @@ function App() {
 	}
 
 	return (
-		<div className='container'>
-			<div id='top-bar'>Find Yo Doggo</div>
-			<div id='content' className='ui stackable two column grid'>
-				<div className='four wide column'>
-					<Filter onChange={handleFilterToggle} />
+		<div>
+			<div className='container'>
+				<div id='top-bar'>Find Yo Doggo</div>
+				<div id='content' className='ui stackable two column grid'>
+					<div className='four wide column'>
+						<Filter onChange={handleFilterToggle} />
+					</div>
+					<div className='twelve wide column'>
+						{displayAppliedFilters()}
+						<Content data={showData()} />
+					</div>
 				</div>
-				<div className='twelve wide column'>
-					{displayAppliedFilters()}
-					<Content data={showData()} />
-				</div>
+			</div>
+			<div id='scroll-to-top' onClick={() => window.scrollTo(0, 0)}>
+				<i className='angle double up icon'></i>
 			</div>
 		</div>
 	)

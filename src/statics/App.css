@@ -84,7 +84,7 @@ body {
 	}
 
 	#top-bar {
-		padding: 15px 70px 0px 20px;
+		padding: 15px 110px 0px 20px;
 		height: 90px;
 		font-size: 32px;
 		line-height: 28px;
@@ -93,4 +93,24 @@ body {
 	.ui.cards {
 		margin: 0px;
 	}
+}
+
+#scroll-to-top {
+	width: 36px;
+	height: 36px;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	z-index: 99999;
+	cursor: pointer;
+	background-color: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.68);
+	border-radius: 20px;
+	padding-top: 5px;
+}
+
+#scroll-to-top > i {
+	font-size: 2em;
+	vertical-align: middle;
+	color: rgba(0, 0, 0, 0.68);
 }

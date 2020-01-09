@@ -4,7 +4,7 @@ import characteristicsData from '../allCharacteristics'
 
 const Filter = ({ onChange }) => {
 	const sizeArr = ['Toy', 'Small', 'Medium', 'Large', 'Extra Large']
-	const charArr = characteristicsData
+	const charArr = characteristicsData.sort()
 
 	return (
 		<div>
