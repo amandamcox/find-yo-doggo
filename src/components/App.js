@@ -9,26 +9,43 @@ function App() {
 	const [appliedCharFilters, setAppliedCharFilters] = useState([])
 
 	useEffect(() => {
-		window.scrollTo(0, 0)
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
 	})
+
+	const sortDogCards = (first, second) => {
+		let breedA = first.breed.toLowerCase()
+		let breedB = second.breed.toLowerCase()
+
+		let comparison = 0
+		if (breedA > breedB) {
+			comparison = 1
+		} else if (breedA < breedB) {
+			comparison = -1
+		}
+		return comparison
+	}
 
 	const showData = () => dogsToShow()
 
 	const dogsToShow = () => {
 		if (appliedSizeFilters.length > 0 && appliedCharFilters.length > 0) {
-			return allDogData.filter(
-				dog =>
-					appliedSizeFilters.includes(dog.size) &&
-					appliedCharFilters.every(c => dog.temperament.includes(c))
-			)
-		} else if (appliedSizeFilters.length > 0 && appliedCharFilters.length === 0) {
-			return allDogData.filter(dog => appliedSizeFilters.includes(dog.size))
-		} else if (appliedSizeFilters.length === 0 && appliedCharFilters.length > 0) {
-			return allDogData.filter(dog =>
-				appliedCharFilters.every(c => dog.temperament.includes(c))
-			)
-		} else {
 			return allDogData
+				.filter(
+					dog =>
+						appliedSizeFilters.includes(dog.size) &&
+						appliedCharFilters.every(c => dog.temperament.includes(c))
+				)
+				.sort(sortDogCards)
+		} else if (appliedSizeFilters.length > 0 && appliedCharFilters.length === 0) {
+			return allDogData
+				.filter(dog => appliedSizeFilters.includes(dog.size))
+				.sort(sortDogCards)
+		} else if (appliedSizeFilters.length === 0 && appliedCharFilters.length > 0) {
+			return allDogData
+				.filter(dog => appliedCharFilters.every(c => dog.temperament.includes(c)))
+				.sort(sortDogCards)
+		} else {
+			return allDogData.sort(sortDogCards)
 		}
 	}
 
@@ -83,7 +100,10 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<div id='scroll-to-top' onClick={() => window.scrollTo(0, 0)}>
+			<div
+				id='scroll-to-top'
+				onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+			>
 				<i className='angle double up icon'></i>
 			</div>
 		</div>

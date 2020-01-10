@@ -96,21 +96,23 @@ body {
 }
 
 #scroll-to-top {
-	width: 36px;
-	height: 36px;
+	width: 40px;
+	height: 40px;
 	position: fixed;
 	bottom: 5%;
 	right: 5%;
 	z-index: 99999;
 	cursor: pointer;
 	background-color: #ffffff;
-	border: 1px solid rgba(0, 0, 0, 0.68);
+	box-shadow: 0 0 0 2px #d4d4d5;
 	border-radius: 20px;
-	padding-top: 5px;
+	display: table;
+	padding: 3px;
 }
 
 #scroll-to-top > i {
 	font-size: 2em;
+	color: #d4d4d5;
+	display: table-cell;
 	vertical-align: middle;
-	color: rgba(0, 0, 0, 0.68);
 }
