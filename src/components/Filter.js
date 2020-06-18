@@ -1,44 +1,35 @@
 import React from 'react'
-import FilterGroup from './FilterGroup'
-import characteristicsData from '../allCharacteristics'
 
-const Filter = ({ onChange }) => {
-	const sizeArr = ['Toy', 'Small', 'Medium', 'Large', 'Extra Large']
-	const charArr = characteristicsData.sort()
-
+const Filter = ({
+	filterType,
+	filterOptions,
+	handleToggle,
+	appliedFilters
+}) => {
 	return (
-		<div>
-			<h4 className='ui horizontal divider blue header'>
-				<i className='filter icon'></i>
-				Filter By
-			</h4>
-			<div className='ui accordion fluid vertical menu'>
-				<div className='item'>
-					<div className='active title'>
-						<i aria-hidden='true' className='dropdown icon'></i>
-						Dog Sizes
-					</div>
-					<div className='content active'>
-						<form className='ui form'>
-							<FilterGroup title='sizes' items={sizeArr} onChange={onChange} />
-						</form>
-					</div>
-					<div className='ui divider'></div>
-					<div className='title'>
-						<i aria-hidden='true' className='dropdown icon'></i>
-						Dog Characteristics
-					</div>
-					<div className='content'>
-						<form className='ui form'>
-							<FilterGroup
-								title='characteristics'
-								items={charArr}
-								onChange={onChange}
-							/>
-						</form>
+		<div className='grouped fields'>
+			{filterOptions.map((filterOption, index) => (
+				<div className='field' key={index}>
+					<div className='ui toggle checkbox'>
+						<input
+							id={`filter${filterOption}`}
+							type='checkbox'
+							className='hidden'
+							value={filterOption}
+							checked={appliedFilters.includes(filterOption)}
+							onChange={event =>
+								handleToggle(event.target.value, filterType)
+							}
+						/>
+						<label
+							htmlFor={`filter${filterOption}`}
+							className='ui horizontal label'
+						>
+							{filterOption}
+						</label>
 					</div>
 				</div>
-			</div>
+			))}
 		</div>
 	)
 }
